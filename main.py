@@ -30,7 +30,9 @@ all_thread_names = []
 
 def new_thread():
     global all_thread_names
-    token = open('token.txt', 'r', encoding='utf-8')
+    file_token = open('token.txt', 'r', encoding='utf-8')
+    list_token = [line.strip() for line in file_token]
+    token = list_token[0]
     channelid = input(
         "[X] Insert the channel ID where messages will be sent (the user must be on the server)\n >> ")
     message = input("[X] Enter the message to be sent in the chat\n >> ")
