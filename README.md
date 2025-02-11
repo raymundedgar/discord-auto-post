@@ -1,5 +1,23 @@
 # Discord-GM-GN-bot
 
+1. Clone
+   ```bash
+   git clone https://github.com/raymundedgar/discord-auto-post.git
+   cd discord-auto-post
+   ```
+2. Env
+   ```bash
+   source venv/bin/activate
+   ```
+3. Req
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run
+   ```bash
+   python main.py
+   ```
+
 G7 больше чем команда
 
 - Ноды
