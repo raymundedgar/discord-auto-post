@@ -120,7 +120,7 @@ class Connection:
         except:
             pass
         current_datetime = datetime.now()
-        log = ("[X] " + str(current_datetime) + " | Сообщение '" + str(message) + "' отправлено в " + channelid)
+        log = ("[X] " + str(current_datetime) + " | Message '" + str(message) + "' sent to " + channelid)
         self.add_log(log)
         thread = Timer(timer, self.send_message)
         thread.start()
